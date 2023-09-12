@@ -1,0 +1,128 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_1280.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    
+}
+
+
+header {
+    background-color: #091a2b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: backgroundChange 4s infinite alternate;
+}
+
+nav ul {
+    background-color: #4aa7ad;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+    transform: scale(1.1); /* Escala ligeramente el enlace al pasar el mouse */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leccion {
+    background-color: #55a08d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.leccion img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #336699;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: backgroundChange 4s infinite alternate; /* Cambio de color alternativo */
+}
+
+@keyframes backgroundChange {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: #091a2b;
+    }
+}
+
+.leer-mas {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.leer-mas:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+.simulador{
+    background-color: #336699;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    animation: fadeIn 5s ease-in-out forwards;
+}
